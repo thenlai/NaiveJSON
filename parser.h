@@ -33,21 +33,15 @@
 
 // string
 #define ESCAPE          '\\'
+#define QUOTE           '"'
+#define SINGLE_QUOTE    '\''
 
-void parse(std::string json);
-void parseValue(std::string value);
+void parse(std::string& json);
+void parseValue(std::string& value);
 
-bool isWhiteSpace(char c);
-void isTRUE(std::string v);
-void isFALSE(std::string v);
-void isNULL(std::string v);
-
-bool isWhiteSpace(char c) {
-  return (
-    c == WS_SPACE ||
-    c == WS_HORIZONTAL_TAB ||
-    c == WS_LINE_FEED ||
-    c == WS_CARRIAGE_RETURN);
-}
+bool isWhiteSpace(char& c);
+bool isTRUE(std::string v);
+bool isFALSE(std::string v);
+bool isNULL(std::string v);
 
 #endif
