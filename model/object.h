@@ -10,11 +10,6 @@ namespace cjson {
 #define Object std::map<Key, Value*>;
 Object *newObject();
 
-Object *newObject() {
-    Object *pObj = new Object;
-    return pObj;
-};
-
 } // end of namespace
 
 
