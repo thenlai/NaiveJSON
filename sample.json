@@ -1,0 +1,12 @@
+{
+    "array": [1, 2, 3],
+    "string": "I am string.",
+    "true": true,
+    "false": false,
+    "null": null,
+    "object": {
+        "key": {
+            "subKey": 0
+        }
+    }
+}
